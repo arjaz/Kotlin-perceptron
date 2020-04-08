@@ -29,6 +29,6 @@ class MainActivity : AppCompatActivity() {
         val iterations = editIterations.text.toString().toInt()
         val (results, weights) = solve(data, rate, threshold, iterations)
 
-        resultsView.text = "Results:\nClasses: " + results.joinToString(", ") + "\nWeights: " + weights.joinToString(", ")
+        resultsView.text = "Results:\nClasses: " + results.joinToString(", ") + "\nWeights: " + weights.joinToString(", ") + "\nIterations: " + iterations.toString();
     }
 }
